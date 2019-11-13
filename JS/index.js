@@ -36,20 +36,29 @@ $(".slides").slidesjs({
     }
       });
 
-      $(".accordion-titulo").click(function(){
-		
-        var contenido=$(this).next(".accordion-content");
-           
-        if(contenido.css("display")=="none"){ //open		
-           contenido.slideDown(250);			
-           $(this).addClass("open");
-        }
-        else{ //close		
-           contenido.slideUp(250);
-           $(this).removeClass("open");	
-       }
-                   
-     });
+$(document).ready(main);
+ 
+      var contador = 1;
+       
+      function main(){
+        $('.menu_bar').click(function(){
+          // $('nav').toggle(); 
+       
+          if(contador == 1){
+            $('nav').animate({
+              left: '0'
+            });
+            contador = 0;
+          } else {
+            contador = 1;
+            $('nav').animate({
+              left: '-100%'
+            });
+          }
+       
+        });
+       
+      };
 
  
 
