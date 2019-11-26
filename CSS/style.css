@@ -7,7 +7,7 @@
  box-sizing:border-box
 }
 #caeza{
-  background: #121c1c;
+  
   margin: 0% ;
   padding: 0%;
   margin-bottom: 3%;
@@ -51,15 +51,15 @@
   }
   
   .nav li a {
-    background-color:#333;
-    color:#fff;
+    background-color:#A8E2D0;
+    color:#483399;
     text-decoration:none;
     padding:10px 12px;
     display:block;
   }
   
   .nav li a:hover {
-    background-color:#434343;
+    background-color:#7BB3D3;
   }
   
   .nav li ul {
@@ -88,7 +88,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #A8E2D0;
 }
 
 .Diseño1{
@@ -108,12 +108,12 @@ ul {
 }
 
 h1{
-  color :	#008b88;
+  color :	#483399;
   text-align: center;
 }
 
 h2{
-  color :	#008b88;
+  color :#483399;
   text-align: center;
 
 }
@@ -125,8 +125,8 @@ h2{
 
 p{
   text-align: justify;
-  color:	#008b88;
-  font-size: 13px;
+  color:	#190815 ;
+  font-size: 16px;
 }
 
 a{
@@ -177,7 +177,7 @@ section{
 
 .Seccion{
 
-background:#121c1c;
+background:#4CBAC3;
 float:right;
 width: 33.33%;
 margin-top: 5.13em;
@@ -185,7 +185,7 @@ margin-bottom: 1.5em;
 }
 
 body{
-background : #121c1c;
+background :#4CBAC3;
 text-align: initial;
 font-family:Serif;
 font-size: 1.1em;
@@ -778,8 +778,5 @@ width: 50%;
   line-height: 75px;
   font-size: 30px;
 }
-
-
-
 
 
