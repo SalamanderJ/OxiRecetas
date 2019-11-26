@@ -19,6 +19,9 @@
 
   }
 
+#video{
+  margin-top: 4%;
+}
 
 .nav-bar {
   width: 100%;
@@ -502,7 +505,7 @@ hr {
 .header {
   padding: 30px;
   text-align: center;
-  background: #121c1c;
+  background: #4CBAC3;
 }
 
 .header h1 {
@@ -542,7 +545,7 @@ hr {
 .rightcolumn {
   float: left;
   width: 25%;
-  background-color: #121c1c;
+  background-color: #4CBAC3;
   padding-left: 20px;
 }
 
@@ -555,7 +558,7 @@ hr {
 
 /* Add a card effect for articles */
 .card {
-  background-color: #121c1c;
+  background-color: #4CBAC3;
   padding: 20px;
   margin-top: 20px;
   font-size: 1.5rem;
@@ -572,7 +575,7 @@ hr {
 }
 .prox{
   width: 30%;
-  background-color:#121c1c;
+  background-color:#4CBAC3;
   padding: 20px;
   margin-left: 25%;
   margin-top: 20px;
@@ -704,7 +707,7 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #121c1c;
+  background-color: #4CBAC3;
 }
 
 .imgsubi{
