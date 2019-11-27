@@ -1,0 +1,785 @@
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+
+*{
+ margin : 0%  ;
+ box-sizing:border-box
+}
+#caeza{
+  
+  margin: 0% ;
+  padding: 0%;
+  margin-bottom: 3%;
+  }
+
+  #mapa{
+
+    margin-top: 10%;
+
+  }
+
+#video{
+  margin-top: 4%;
+}
+
+.nav-bar {
+  width: 100%;
+}
+#logo{
+  width: 75px;
+}
+
+#bidio{
+  width:360px; 
+  height:315px;
+  border:0;
+}
+#chayanne{
+  width:260px ;
+  height:315px;
+}
+.twitter{
+  color: white;
+}
+
+
+  ul, ol {
+    list-style:none;
+  }
+  
+  .nav > li {
+    float:left;
+
+  }
+  
+  .nav li a {
+    background-color:#A8E2D0;
+    color:#483399;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+  }
+  
+  .nav li a:hover {
+    background-color:#7BB3D3;
+  }
+  
+  .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+  }
+  
+  .nav li:hover > ul {
+    display:block;
+    z-index: 999;
+  }
+  
+  .nav li ul li {
+    position:relative;
+  }
+  
+  .nav li ul li ul {
+    right:-140px;
+    top:0px;
+  }
+
+ /*  ul  no borrar*/
+ul { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #A8E2D0;
+}
+
+.Diseño1{
+  float: left;
+}
+
+.Diseño1 a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Diseño1 a:hover{
+  background-color:rgb(32, 28, 28);
+}
+
+h1{
+  color :	#483399;
+  text-align: center;
+}
+
+h2{
+  color :#483399;
+  text-align: center;
+
+}
+
+.recetas img{
+  max-height: 400px;
+  max-width: 550px;
+}
+
+p{
+  text-align: justify;
+  color:	#190815 ;
+  font-size: 16px;
+}
+
+a{
+  color:	#fb6944;
+  
+}
+.box {
+  width: 100%;
+}
+.mapa{
+  width: 100%;
+  overflow: hidden;
+}
+
+footer {
+   height:30px;
+   width:100%;
+   background:#0092ff;
+   bottom: 0%;
+   text-align: center;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+
+#chayanne{  
+margin: 0 auto;
+width: 50%;
+height: auto;
+}
+
+
+#vidio{
+margin-left: 1.5em;
+margin-top: 1.5em;
+}
+
+aside{
+
+padding-left : 2%;
+}
+
+section{
+  padding-right: 2%;
+  
+}
+
+
+.Seccion{
+
+background:#4CBAC3;
+float:right;
+width: 33.33%;
+margin-top: 5.13em;
+margin-bottom: 1.5em;
+}
+
+body{
+background :#4CBAC3;
+text-align: initial;
+font-family:Serif;
+font-size: 1.1em;
+font-style: normal;
+text-align:center;
+}
+.desc{
+  font-family: all;
+  font-size: 20px;
+  text-align: center;
+}
+
+.rec{
+  padding-left: 1px;
+}
+.parInic{
+  font-size: 2rem;
+  padding:1em;
+}
+/*---------------------------------------------------------------------------------------------------*/
+/* BOTON ABRIR */
+.AbrirBoton {
+  background-color: rgb(110, 85, 85);
+  color: rgb(37, 17, 17);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* PopUp*/
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #000000;
+  z-index: 9;
+}
+
+/* Contenido */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(12, 5, 83);
+}
+
+/* TextArea */
+.form-container textarea {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #ffffff;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+.checked {
+  color: orange;
+}
+li{
+  padding-left: 2%;
+}
+
+
+.recetas{
+  margin: 2em;
+  padding: 1em;
+  border: 1em;
+  background-color: #334d4d;
+  font-family: sans-serif; 
+
+}
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+  background: #000000;  
+}
+ 
+	.social ul {
+		list-style: none;
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+ 
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-googleplus {background: #d95232;}
+	.social ul li .icon-pinterest {background: #ae181f;}
+	.social ul li .icon-mail {background: #666666;}
+ 
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+.navbar-laravel
+{
+    box-shadow: 0 2px 4px;
+}
+
+.navbar-brand , .nav-link, .my-form, .login-form
+{
+    font-family: Raleway, sans-serif;
+}
+
+.my-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.my-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.login-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+main{
+  width: 100%;
+  max-width: 1000px;
+   margin: 10px auto;
+}
+
+.slides{
+  width: 100%;
+  max-width: 1000px;
+ 
+}
+
+.slides img{
+  width: 100%;
+
+}
+.slidesjs-pagination{
+  background: #008b88;
+  color: #000;
+  list-style: none;
+  overflow: hidden;
+}
+.slidesjs-pagination li{
+  float: left;
+}
+.slidesjs-pagination li a{
+  color: #000;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none; 
+}
+.slidesjs-pagination li a:hover{
+  background: #008b88;
+  color: #fff;
+}
+.slides .active{
+  background: #008b88;
+  color: #fff;
+}
+.slidesjs-navigation{
+  background: #008b88;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  float: right;
+}
+.slidesjs-navigation:hover{
+  background: #008b88;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 11.6px 20px;
+  float: right;
+}
+
+#videoPrem{
+  height: 300px;
+  width: 450px;
+}
+
+/*Registro*/
+/* Add padding to containers */
+.containerReg {
+  margin-left :25%; 
+  margin-right: 25%;
+  padding: 1em;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.rightcolumn{
+  padding-left:10%;
+}
+#btnRec{
+  padding: 1em;
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+#iniciarSesion {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/*Premium*/
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #4CBAC3;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 65%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #4CBAC3;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 40%;
+  padding: 20px;
+  margin-left:28%;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #4CBAC3;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.card p{
+  font-size: 1.3rem;
+}
+.card h2{
+ margin-right:8%;
+}
+.card h3{
+  font-family: sans-serif;
+  color:  #008b88;
+}
+.prox{
+  width: 30%;
+  background-color:#4CBAC3;
+  padding: 20px;
+  margin-left: 25%;
+  margin-top: 20px;
+
+}
+ .prox p{
+  font-size: 1.3rem;
+ }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 900px;
+}
+
+.imgrec{
+  margin-left: 90%;
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+.contenedor{
+
+
+width: 300px;
+
+}
+.texto{
+
+  text-align: left;
+
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+/*MEDIA QUERY*/
+@media (max-width: 1000px){
+  .recetas img{
+  max-height: 180px;
+  max-width: 240px;
+  }
+}
+
+
+@media (max-width: 1000px){
+  #videoPrem{
+  max-height: 200px;
+  max-width: 290px;
+  }
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #4CBAC3;
+}
+
+.imgsubi{
+width: 50%;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+.container {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgb(119, 30, 30);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+	 flex-direction: row;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}/* *********************************** */
+
+
+.flex-images {
+  display: flex;
+  justify-content: left;
+
+}
+
+.flex-images > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
