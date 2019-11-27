@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="CSS/modalwindow.css">
     <link rel="stylesheet" type="text/css" href="CSS/flexboxgrid.min.css">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <title>Comida Vegetariana</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" >
+    <script src="/JS/index.js"  ></script>
+    <title>Comida Italiana</title>
 </head>
-
 <body>
     <div class="row">
         <div class="nav-bar">
@@ -20,7 +17,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="premium.html">Premium</a></li>
                 <li><a href="Comunidad.html">Comunidad</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="registrar.html">Login</a></li>
                 <li><a href="#ir">Bajar</a></li>
                 <li><a href="https://www.youtube.com/watch?v=2Sze3sf9tm8" target="_blank">Ir a youtube</a> </li>
                 <li><a href="">Recetas</a>
@@ -36,157 +33,217 @@
         </div>
     </div><br>
 
-    <h2 id="margenes">Comida Vegetariana</h2>
+    <h2>Comida Italiana</h2>
 
 
-    <div class="ex1">
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'PastaRoll')" id="defaultOpen">Pasta Roll Rellena de Espinaca y Ricota</button>
-            <button class="tablinks" onclick="openCity(event, 'Hambur')">Hamburguesa de Lentejas</button>
-            <button class="tablinks" onclick="openCity(event, 'Lasagna')">Lasaña de Verduras</button>
-            <button class="tablinks" onclick="openCity(event, 'Tomaco')">Tomates Rellenos con Huevo</button>
-            <button class="tablinks" onclick="openCity(event, '')">Proximamente</button>
-            <button class="tablinks" onclick="openCity(event, '')">Proximamente</button>
-            <button class="tablinks" onclick="openCity(event, '')">Proximamente</button>
-            <button class="tablinks" onclick="openCity(event, '')">Proximamente</button>
-            <button class="tablinks" onclick="openCity(event, '')">Proximamente</button>
-        </div>
+    <div class="flex-container">
+        <div class="container">
+             <h1>Pasta Roll Rellena de Espinaca y Ricota</h1>
+             <img src="img/pastaroll.jpg" alt="Avatar" class="image">
+          
+             <div class="w3-container">
+                <button onclick="document.getElementById('id09').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id09" class="w3-modal">
+                  <div class="w3-modal-content">
+                    <div class="w3-container">
+                      <span onclick="document.getElementById('id09').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                      <header><h1>Pasta Roll Rellena de Espinaca y Ricota</h1></header>
+                      <Section>
+                        <h3>Ingredientes</h3><br>
+                        <p class="texto">2 Cebollas moradas</p>
+                        <p class="texto">6 Champiñones</p>
+                        <p class="texto" >3 Ajos</p>
+                        <p class="texto">3 Cebollines</p>
+                        <p class="texto">2 latas de lentejas</p>
+                        <p class="texto">4 cdas de Pan rallado</p>
+                        <p class="texto">1 huevo</p>
+                        <p class="texto">Ají molido</p>
+                        <p class="texto">1 atado de Perejil</p>
+                        <p class="texto">Pimentón</p>
+                        <p class="texto">Comino</p>
+                        <p class="texto">1 paquete de queso danbo laminado</p>
+                        <p class="texto">2 Paltas</p>
+                        <p class="texto">3 Limas</p>
+                        <p class="texto">2 Morrones rojo</p>
+                        <p class="texto">1 atado de cilantro</p>
+                        <p class="texto">1 Cebolla</p>
+                        <p class="texto" >2 ajíes jalapeño</p>
+                        <p class="texto">Queso crema</p>
+                        <p class="texto">Pan de hamburguesa</p>
+                        <p class="texto">Batata (para acompañamiento frito)</p>
+                        <h3>Instrucciones</h3>
+                        <p class="texto">-Cocinar la pasta al dente según las instrucciones del paquete. Reservar.</p>
+                        <p class="texto">-En sartén con un poco de oliva rehogar los ajos, incorporar las espinacas picadas y cocinar por 2 minutos hasta que resulten blandas. Retirar del fuego y pasar a un bowl.</p>
+                        <p class="texto">-Unir lo del bowl con la ricota, la mozzarella, el parmesano el huevo, las nueces y la albahaca picada. Condimentar.</p>
+                        <p class="texto">-Bañar la superficie de una sartén apta para horno con la mitad de la salsa de tomate, rellenar generosamente los las láminas de pasta, enrollarlos y llevarlos sobre la salsa. Terminar con más salsa y mas mozzarella rallada.</p>
+                        <p class="texto">-Tapar con aluminio y llevar a horno precalentado en 180° por unos 25 minutos. Retirar el papel aluminio y terminar gratinando los quesos unos 10 minutos mas.</p>
+                      </Section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+       </div>
+
+       <div class="container">
+         <h1>Hamburguesa de Lentejas</h1>
+        <img src="img/hamlen.jpg" alt="Avatar" class="image">     
+        <div class="w3-container">
+           <button onclick="document.getElementById('id10').style.display='block'" class="w3-button w3-black">Ver más</button>
+           <div id="id10" class="w3-modal">
+             <div class="w3-modal-content">
+               <div class="w3-container">
+                 <span onclick="document.getElementById('id10').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                 <header><h1>Hamburguesa de Lentejas</h1></header>
+                 <Section>
+                    <h3>Ingredientes</h3><br>
+                  <p class="texto">8 láminas de lasaña grande</p>
+                  <p class="texto">4 tazas de espinaca fresca picada</p>
+                  <p class="texto"> 2 ajos picados</p>
+                  <p class="texto">350 gramos de ricota</p>
+                  <p class="texto">1 taza de mozzarella rallada</p>
+                  <p class="texto">80 gramos de nueces picadas</p>
+                  <p class="texto">½ taza de parmesano rallado</p>
+                  <p class="texto">1 huevo</p>
+                  <p class="texto">2 cdas. de albahaca picada</p>
+                  <p class="texto">Sal, pimienta y oliva</p>
+                  <p class="texto">2 tazas de salsa de tomate espesa</p>
+                   <h3>Instrucciones</h3><br>
+                   <p class="texto">-Saltear en un poco de oliva: cebolla morada, champis, ajo y verdeo condimentando con sal y pimienta hasta que ablande. Dejar enfriar.</p>
+                   <p class="texto">-Procesar las lentejas ya cocidas y en un bowl unir con 3/4 sal salteado de vegetales y condimentar con ajo molido, comino, pimentón y perejil</p>
+                   <p class="texto">-Darle forma a la hamburguesa y llevar a dorar a una sartén bien caliente. Al darla vuelta agregar el queso por arriba.</p>
+                   <p class="texto">-Armar la hamburguesa con: Pan untado con salsa roja, hamburguesa, palta (con jugo de lima y cilantro), 1/4 restante del salteado y el otro pan untado con mas salsa.</p>
+                   <p class="texto">-Para la Salsa roja:</p>
+                   <p class="texto">-Quemar en una grilla las cebollas, los morrones y los chiles.</p>
+                   <p class="texto">-Llevar a una procesadora con un poco de oliva, sal y pimienta.</p>
+                   <p class="texto">-Mezclar con queso crema para formar una consistencia cremosa.</p>
+                 </Section>
+               </div>
+             </div>
+           </div>
+         </div>
+      </div>    
+
+
+      <div class="container">
+        <h1>Lasaña de Verduras</h1>
+        <img src="img/lasagna.png" alt="Avatar" class="image">
+        <div class="w3-container">
+            <button onclick="document.getElementById('id11').style.display='block'" class="w3-button w3-black">Ver más</button>
+            <div id="id11" class="w3-modal">
+              <div class="w3-modal-content">
+                <div class="w3-container">
+                  <span onclick="document.getElementById('id11').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                  <header><h1>Lasaña de Verduras</h1></header>
+                  <Section>
+                      <h3>Ingredientes</h3><br>
+                    <p class="texto">3 berenjenas cortadas a lo largo</p>
+                    <p class="texto">3 zucchini cortadas a lo largo</p>
+                    <p class="texto">1 cebolla picada</p>
+                    <p class="texto">1 lt. de tomate triturado</p>
+                    <p class="texto">3 ajos picados</p>
+                    <p class="texto">1 ½ taza ricota</p>
+                    <p class="texto">¼ de queso parmesano</p>
+                    <p class="texto">3 tazas de mozzarella rallada</p>
+                    <p class="texto">2 cdas. de albahaca picada</p>
+                    <p class="texto">1 huevo grande</p>
+                    <p class="texto">Sal, pimienta y oliva</p>
+                    <h3>Instrucciones</h3><br>
+                    <p class="texto">En una sartén con un toque de oliva rehogar la cebolla y el ajo hasta trasparentar. Agregar la salsa de tomate triturado, condimentar bien, agregar la albahaca picada y cocinar por 30 minutos.</p>
+                    <p class="texto">Grillar los vegetales con un toque de oliva por 2 o 3 minutos por lado. Retirar sobre papel absorbente para eliminar el exceso de humedad.</p>
+                    <p class="texto">En un bowl mezclar la ricota con el parmesano y el huevo hasta lograr una preparacion homogenea.</p>
+                    <p class="texto">En placa alta ir intercalando salsa, vegetales grillados, la mezcla de ricota y mozzarella hasta agotar los ingredientes (reservar un poco de mozzarella para más adelante).</p>
+                    <p class="texto">Tapar con papel aluminio y cocinar en horno a 180ª precalentado por 30 minutos. Pasado ese tiempo quitar el papel aluminio y cocinar 20 minutos más.</p>
+                    <p class="texto">Luego colocar mozzarella sobre la superficie y llevar 5 minutos hasta gratinar.</p>
+                  </Section>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 
-    <div id="PastaRoll" class="tabcontent">
-        <h3>-Simple y sabrosa, una opción saludable para disfrutar de una hamburguesa</h3><br>
-        <h2>Ingredientes</h2>
+  </div>
 
-        <p>2 Cebollas moradas</p>
-        <p>6 Champiñones</p>
-        <p>3 Ajos</p>
-        <p>3 Cebollines</p>
-        <p>2 latas de lentejas</p>
-        <p>4 cdas de Pan rallado</p>
-        <p>1 huevo</p>
-        <p>Ají molido</p>
-        <p>1 atado de Perejil</p>
-        <p>Pimentón</p>
-        <p>Comino</p>
-        <p>1 paquete de queso danbo laminado</p>
-        <p>2 Paltas</p>
-        <p>3 Limas</p>
-        <p>2 Morrones rojo</p>
-        <p>1 atado de cilantro</p>
-        <p>1 Cebolla</p>
-        <p>2 ajíes jalapeño</p>
-        <p>Queso crema</p>
-        <p>Pan de hamburguesa</p>
-        <p>Batata (para acompañamiento frito)</p>
-        <div class="contenedor">
-            <img class="imgrec" src="img/pastaroll.jpg" alt="error"><br>
+  <div class="flex-container">
+  <div class="container">
+      <h1>Tomates Rellenos con Huevo</h1>
+      <img src="img/tomrel.jpg" alt="Avatar" class="image">
+      <div class="w3-container">
+          <button onclick="document.getElementById('id12').style.display='block'" class="w3-button w3-black">Ver más</button>
+          <div id="id12" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id12').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <header><h1>Tomates Rellenos con Huevo</h1></header>
+                <Section>
+                    <h3>Ingredientes</h3><br>
+                  <p class="texto">3 tomates</p>
+                  <p class="texto">6 huevos frescos chicos</p>
+                  <p class="texto">2 cdas. de ciboulette picada</p>
+                  <p class="texto">3 rodajas de pan de campo</p>
+                  <p class="texto">Sal, pimienta y oliva</p>
+                  <h3>Instrucciones</h3><br>
+                  <p class="texto">Llevar a tostar las rodajas de pan con un toque de oliva y pimienta por ambos lados.</p>
+                  <p class="texto">Cortar los tomates perita a lo largo por el medio, quitar toda la pulpa. Llevar a una placa con un poco de oliva, sal y pimienta recién molida.</p>
+                  <p class="texto">Abrir e incorporar los huevos dentro de los tomates, condimentar con sal y pimienta. Espolvorear con ciboulette picada.</p>
+                  <p class="texto">Llevar a horno fuerte por 7/8 minutos.</p>
+                  <p class="texto">Servir los tomates sobre las tostadas.</p>
+                </Section>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="texto">-Cocinar la pasta al dente según las instrucciones del paquete. Reservar.</p>
-        <p class="texto">-En sartén con un poco de oliva rehogar los ajos, incorporar las espinacas picadas y cocinar por 2 minutos hasta que resulten blandas. Retirar del fuego y pasar a un bowl.</p>
-        <p class="texto">-Unir lo del bowl con la ricota, la mozzarella, el parmesano el huevo, las nueces y la albahaca picada. Condimentar.</p>
-        <p class="texto">-Bañar la superficie de una sartén apta para horno con la mitad de la salsa de tomate, rellenar generosamente los las láminas de pasta, enrollarlos y llevarlos sobre la salsa. Terminar con más salsa y mas mozzarella rallada.</p>
-        <p class="texto">-Tapar con aluminio y llevar a horno precalentado en 180° por unos 25 minutos. Retirar el papel aluminio y terminar gratinando los quesos unos 10 minutos mas.</p>
-    </div>
+  </div> 
 
-    <div id="Hambur" class="tabcontent">
-        <h3>-Estos rollos de lasaña de espinaca y ricota son una manera divertida de comer tu pasta</h3>
-        <h2>Ingredientes</h2>
-
-        <p>8 láminas de lasaña grande</p>
-        <p>4 tazas de espinaca fresca picada</p>
-        <p> 2 ajos picados</p>
-        <p>350 gramos de ricota</p>
-        <p>1 taza de mozzarella rallada</p>
-        <p>80 gramos de nueces picadas</p>
-        <p>½ taza de parmesano rallado</p>
-        <p>1 huevo</p>
-        <p>2 cdas. de albahaca picada</p>
-        <p>Sal, pimienta y oliva</p>
-        <p>2 tazas de salsa de tomate espesa</p>
-        <div class="contenedor">
-            <img class="imgrec" src="img/hamlen.jpg" alt="ERROR"><br>
+  <div class="container">
+      <h1>Proximamente</h1>
+      <img src="img/Bastian.jpg" alt="Avatar" class="image">
+      <div class="w3-container">
+          <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black">Ver más</button>
+          <div id="id05" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <header><h1>Fuera aqui no hay nada UWU</h1></header>
+                <Section>
+                </Section>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="texto">-Saltear en un poco de oliva: cebolla morada, champis, ajo y verdeo condimentando con sal y pimienta hasta que ablande. Dejar enfriar.</p>
-        <p class="texto">-Procesar las lentejas ya cocidas y en un bowl unir con 3/4 sal salteado de vegetales y condimentar con ajo molido, comino, pimentón y perejil</p>
-        <p class="texto">-Darle forma a la hamburguesa y llevar a dorar a una sartén bien caliente. Al darla vuelta agregar el queso por arriba.</p>
-        <p class="texto">-Armar la hamburguesa con: Pan untado con salsa roja, hamburguesa, palta (con jugo de lima y cilantro), 1/4 restante del salteado y el otro pan untado con mas salsa.</p>
-        <p class="texto">-Para la Salsa roja:</p>
-        <p class="texto">-Quemar en una grilla las cebollas, los morrones y los chiles.</p>
-        <p class="texto">-Llevar a una procesadora con un poco de oliva, sal y pimienta.</p>
-        <p class="texto">-Mezclar con queso crema para formar una consistencia cremosa.</p>
-    </div>
+  </div> 
 
-    <div id="Lasagna" class="tabcontent">
-        <h3>-Tus verduras preferidas en una lasaña explosiva.</h3>
-        <h2>Ingredientes</h2>
-
-
-        <p>3 berenjenas cortadas a lo largo</p>
-        <p>3 zucchini cortadas a lo largo</p>
-        <p>1 cebolla picada</p>
-        <p>1 lt. de tomate triturado</p>
-        <p>3 ajos picados</p>
-        <p>1 ½ taza ricota</p>
-        <p>¼ de queso parmesano</p>
-        <p>3 tazas de mozzarella rallada</p>
-        <p>2 cdas. de albahaca picada</p>
-        <p>1 huevo grande</p>
-        <p>Sal, pimienta y oliva</p>
-        <div class="contenedor">
-            <img class="imgrec" src="img/lasagna.png" alt="ERROR"><br>
+  <div class="container">
+      <h1>Proximamente</h1>
+      <img src="img/Bastian.jpg" alt="Avatar" class="image">
+      <div class="w3-container">
+          <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black">Ver más</button>
+          <div id="id05" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <header><h1>Fuera aqui no hay nada UWU</h1></header>
+                <Section>
+                </Section>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="texto">En una sartén con un toque de oliva rehogar la cebolla y el ajo hasta trasparentar. Agregar la salsa de tomate triturado, condimentar bien, agregar la albahaca picada y cocinar por 30 minutos.</p>
-        <p class="texto">Grillar los vegetales con un toque de oliva por 2 o 3 minutos por lado. Retirar sobre papel absorbente para eliminar el exceso de humedad.</p>
-        <p class="texto">En un bowl mezclar la ricota con el parmesano y el huevo hasta lograr una preparacion homogenea.</p>
-        <p class="texto">En placa alta ir intercalando salsa, vegetales grillados, la mezcla de ricota y mozzarella hasta agotar los ingredientes (reservar un poco de mozzarella para más adelante).</p>
-        <p class="texto">Tapar con papel aluminio y cocinar en horno a 180ª precalentado por 30 minutos. Pasado ese tiempo quitar el papel aluminio y cocinar 20 minutos más.</p>
-        <p class="texto">Luego colocar mozzarella sobre la superficie y llevar 5 minutos hasta gratinar.</p>
-    </div>
+  </div> 
 
 
-    <div id="Tomaco" class="tabcontent">
-        <h3>-Para cualquier momento del día.</h3>
-        <h2>Ingredientes</h2>
+</div>   
+        
 
-        <p>3 tomates</p>
-        <p>6 huevos frescos chicos</p>
-        <p>2 cdas. de ciboulette picada</p>
-        <p>3 rodajas de pan de campo</p>
-        <p>Sal, pimienta y oliva</p>
-        <div class="contenedor">
-            <img class="imgrec" src="img/tomrel.jpg" alt="ERROR"><br>
-        </div>
-        <p class="texto">Llevar a tostar las rodajas de pan con un toque de oliva y pimienta por ambos lados.</p>
-        <p class="texto">Cortar los tomates perita a lo largo por el medio, quitar toda la pulpa. Llevar a una placa con un poco de oliva, sal y pimienta recién molida.</p>
-        <p class="texto">Abrir e incorporar los huevos dentro de los tomates, condimentar con sal y pimienta. Espolvorear con ciboulette picada.</p>
-        <p class="texto">Llevar a horno fuerte por 7/8 minutos.</p>
-        <p class="texto">Servir los tomates sobre las tostadas.</p>
-    </div>
 
-    <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
-    <div class="row center-lg">
-        <div class="col-xs-12">
-            <footer>Una pagina de OxiCompany.</footer>
-        </div>
-    </div>
-
+  <div class="row center-lg">
+      <div class="col-xs-12">
+              <footer>Una pagina de OxiCompany.</footer>
+         </div>
+  </div>
+  
 </body>
 
-</html>
+
+
+    
+
