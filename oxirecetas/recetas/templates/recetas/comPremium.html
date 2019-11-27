@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,10 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="CSS/modalwindow.css">
-    <link rel="stylesheet" type="text/css" href="CSS/flexboxgrid.min.css">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <script src="/JS/index.js"></script>
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/modalwindow.css' %}">
+    <script src="{%static '/js/index.js'%}"></script>
     <title>Comida Premium</title>
 </head>
 
@@ -31,6 +33,7 @@
                         <li><a href="comPremium.html">Comida Premium</a></li>
                     </ul>
                 </li>
+                <li><img src="{% static 'img/logo1.png'%}" id="logo" alt="ERROR"></li>
             </ul>
         </div>
     </div><br>
@@ -41,7 +44,7 @@
     <div class="flex-container">
         <div class="container">
             <h1>Creme brulee de puerros y mascarpone</h1>
-            <img src="img/creme.jpg" alt="Avatar" class="image">
+            <img src="{%static 'img/creme.jpg'%}" alt="Avatar" class="image">
 
             <div class="w3-container">
                 <button onclick="document.getElementById('id21').style.display='block'" class="w3-button w3-black">Ver más</button>
@@ -81,7 +84,7 @@
 
         <div class="container">
             <h1>Medallones de bogavante</h1>
-            <img src="img/boga.jpg" alt="Avatar" class="image">
+            <img src="{%static 'img/boga.jpg'%}" alt="Avatar" class="image">
             <div class="w3-container">
                 <button onclick="document.getElementById('id22').style.display='block'" class="w3-button w3-black">Ver más</button>
                 <div id="id22" class="w3-modal">
@@ -118,7 +121,7 @@
 
         <div class="container">
             <h1>Codorniz escabechada</h1>
-            <img src="img/codo.jpg" alt="Avatar" class="image">
+            <img src="{%static 'img/codo.jpg'%}" alt="Avatar" class="image">
             <div class="w3-container">
                 <button onclick="document.getElementById('id23').style.display='block'" class="w3-button w3-black">Ver más</button>
                 <div id="id23" class="w3-modal">
@@ -162,7 +165,7 @@
     <div class="flex-container">
         <div class="container">
             <h1>Silla de cordero</h1>
-            <img src="img/corder.jpg" alt="Avatar" class="image">
+            <img src="{%static 'img/corder.jpg'%}" alt="Avatar" class="image">
             <div class="w3-container">
                 <button onclick="document.getElementById('id24').style.display='block'" class="w3-button w3-black">Ver más</button>
                 <div id="id24" class="w3-modal">
@@ -200,7 +203,7 @@
 
         <div class="container">
             <h1>Proximamente</h1>
-            <img src="img/Bastian.jpg" alt="Avatar" class="image">
+            <img src="{%static 'img/prox.jpg'%}" alt="Avatar" class="image">
             <div class="w3-container">
                 <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black">Ver más</button>
                 <div id="id05" class="w3-modal">
@@ -220,7 +223,7 @@
 
         <div class="container">
             <h1>Proximamente</h1>
-            <img src="img/Bastian.jpg" alt="Avatar" class="image">
+            <img src="{%static 'img/prox.jpg'%}" alt="Avatar" class="image">
             <div class="w3-container">
                 <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black">Ver más</button>
                 <div id="id05" class="w3-modal">

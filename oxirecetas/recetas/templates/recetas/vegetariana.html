@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,10 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="CSS/modalwindow.css">
-    <link rel="stylesheet" type="text/css" href="CSS/flexboxgrid.min.css">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <script src="/JS/index.js"></script>
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/modalwindow.css' %}">
+    <script src="{%static '/js/index.js'%}"></script>
     <title>Comida Vegetariana</title>
 </head>
 
@@ -31,6 +33,7 @@
                         <li><a href="comPremium.html">Comida Premium</a></li>
                     </ul>
                 </li>
+                <li><img src="{% static 'img/logo1.png'%}" id="logo" alt="ERROR"></li>
             </ul>
         </div>
     </div><br>
@@ -41,7 +44,7 @@
     <div class="flex-container">
         <div class="container">
             <h1>Pasta Roll Rellena de Espinaca y Ricota</h1>
-            <img src="img/pastaroll.jpg" alt="Avatar" class="image">
+            <img src="{%static 'img/pastaroll.jpg'%}" alt="Avatar" class="image">
 
             <div class="w3-container">
                 <button onclick="document.getElementById('id09').style.display='block'" class="w3-button w3-black">Ver más</button>
@@ -90,7 +93,7 @@
 
         <div class="container">
             <h1>Hamburguesa de Lentejas</h1>
-            <img src="img/hamlen.jpg" alt="Avatar" class="image">
+            <img src="{%static 'img/hamlen.jpg'%}" alt="Avatar" class="image">
             <div class="w3-container">
                 <button onclick="document.getElementById('id10').style.display='block'" class="w3-button w3-black">Ver más</button>
                 <div id="id10" class="w3-modal">
@@ -132,7 +135,7 @@
 
         <div class="container">
             <h1>Lasaña de Verduras</h1>
-            <img src="img/lasagna.png" alt="Avatar" class="image">
+            <img src="{%static 'img/lasagna.png'%}" alt="Avatar" class="image">
             <div class="w3-container">
                 <button onclick="document.getElementById('id11').style.display='block'" class="w3-button w3-black">Ver más</button>
                 <div id="id11" class="w3-modal">
@@ -174,7 +177,7 @@
     <div class="flex-container">
         <div class="container">
             <h1>Tomates Rellenos con Huevo</h1>
-            <img src="img/tomrel.jpg" alt="Avatar" class="image">
+            <img src="{%static 'img/tomrel.jpg'%}" alt="Avatar" class="image">
             <div class="w3-container">
                 <button onclick="document.getElementById('id12').style.display='block'" class="w3-button w3-black">Ver más</button>
                 <div id="id12" class="w3-modal">
@@ -206,7 +209,7 @@
 
         <div class="container">
             <h1>Proximamente</h1>
-            <img src="img/Bastian.jpg" alt="Avatar" class="image">
+            <img src="{%static 'img/prox.jpg'%}" alt="Avatar" class="image">
             <div class="w3-container">
                 <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black">Ver más</button>
                 <div id="id05" class="w3-modal">
@@ -226,7 +229,7 @@
 
         <div class="container">
             <h1>Proximamente</h1>
-            <img src="img/Bastian.jpg" alt="Avatar" class="image">
+            <img src="{%static 'img/prox.jpg'%}" alt="Avatar" class="image">
             <div class="w3-container">
                 <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black">Ver más</button>
                 <div id="id05" class="w3-modal">
