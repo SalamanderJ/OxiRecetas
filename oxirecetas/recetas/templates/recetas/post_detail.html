@@ -15,10 +15,10 @@
                         <div>
                             <p style="color: aliceblue; font-size: 85%;">{{ post.text|linebreaksbr }}</p> 
                         </div>
-                        <a href="{% url 'post_edit' pk=post.pk %}" style="color: aliceblue; font-size: 200%;"><i class="fas fa-plus-circle"></i></a>
+                        {% if user.is_authenticated %}<a href="{% url 'post_edit' pk=post.pk %}" style="color: aliceblue; font-size: 200%;"><i class="fas fa-plus-circle"></i></a>{% endif %}
                     </div>
-                    {% if user.is_authenticated %}
-                    {% endif %}
+
+                    
                 </div>
 
 

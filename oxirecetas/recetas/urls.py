@@ -17,3 +17,5 @@ urlpatterns = [
     path('francesa.html', views.francesa, name='francesa'),
     path('comPremium.html', views.comPremium, name='comPremium'),
 ]
+
+
