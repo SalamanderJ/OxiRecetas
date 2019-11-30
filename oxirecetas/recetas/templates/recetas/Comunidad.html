@@ -1,25 +1,26 @@
-{% extends 'recetas/base.html' %} {% load staticfiles %}
+{% extends 'recetas/base.html' %}
+{% load staticfiles %}
 
 
 <body>
-    {% block content %}
+        {% block content %}
     <header>
         <h1>Comunidad</h1>
     </header>
     <div class="row">
 
-        <div class="flex-container">
-            {% for post in posts %}
-            <div>
-                <p id="titulo-post"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></p>
-                <p id="fecha-post"> publicado: {{ post.published_date }}</p>
-                <br>
-                <div>
-                    <p>{{ post.text|linebreaksbr }}</p>
+            <div class="flex-container">
+                    {% for post in posts %}
+                    <div>
+                        <p id="titulo-post"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></p>
+                        <p id="fecha-post"> publicado: {{ post.published_date }}</p>
+                        <br>
+                        <div>
+                            <p>{{ post.text|linebreaksbr }}</p> 
+                        </div>
+                    </div>
+                    {% endfor %}
                 </div>
-            </div>
-            {% endfor %}
-        </div>
 
 
         <div class="rightcolumn">
@@ -45,9 +46,9 @@
         </div>
     </div>
 
+    
 
-
-
+  
     <script>
         function openForm() {
             document.getElementById("myForm").style.display = "block";
@@ -114,14 +115,14 @@
 
 
 
+    
 
+    
+    
+   
+    
 
-
-
-
-
-
-    {% endblock %}
+    {% endblock %} 
 </body>
 
 </html>

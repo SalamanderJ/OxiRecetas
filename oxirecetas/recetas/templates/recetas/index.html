@@ -1,46 +1,9 @@
+{% extends 'recetas/base.html' %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-    <title>OxiRecetas</title>
-
-    <link rel="stylesheet" href="{% static 'css/all.css' %}">
-    <link rel="stylesheet" href="{% static 'css/flexboxgrid.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-</head>
 
 <body>
-    <div class="row">
-        <div class="nav-bar">
-            <ul class="nav">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="premium.html">Premium</a></li>
-                <li><a href="Comunidad.html">Comunidad</a></li>
-                <li><a href="registrar.html">Login</a></li>
-                <li><a href="https://www.youtube.com/watch?v=2Sze3sf9tm8" target="_blank">Ir a youtube</a> </li>
-                <li><a href="">Recetas</a>
-                    <ul>
-                        <li><a href="vegetariana.html">Comida Vegetariana</a></li>
-                        <li><a href="italiana.html">Comida Italiana</a></li>
-                        <li><a href="chilena.html">Comida Chilena</a></li>
-                        <li><a href="francesa.html">Comida Francesa</a></li>
-                        <li><a href="comPremium.html">Comida Premium</a></li>
-                    </ul>
-                </li>
-                <li><img src="{% static 'img/logo1.png'%}" id="logo" alt="ERROR"></li>
-
-            </ul>
-
-        </div>
-
-    </div><br>
+        {% block content %}
 
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12  col-lg-12">
@@ -128,11 +91,7 @@
             </div>
         </div>
     </div>
-    <div class="row center-lg">
-        <div class="col-xs-12">
-            <footer>Una pagina de OxiCompany.</footer>
-        </div>
-    </div>
+    
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -140,7 +99,7 @@
     <script src="{% static 'js/index.js'%}"></script>
 
 
-
+    {% endblock %} 
 </body>
 
 </html>

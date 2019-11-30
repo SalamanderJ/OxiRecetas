@@ -1,47 +1,11 @@
+{% extends 'recetas/base.html' %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-    <title>Premium</title>
-    <link rel="stylesheet" href="{% static 'css/all.css' %}">
-    <link rel="stylesheet" href="{% static 'css/flexboxgrid.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/modalwindow.css' %}">
-</head>
 
 <body>
+        {% block content %}
 
 
-
-    <div class="row">
-        <div class="nav-bar">
-            <ul class="nav">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="premium.html">Premium</a></li>
-                <li><a href="Comunidad.html">Comunidad</a></li>
-                <li><a href="registrar.html">Login</a></li>
-                <li><a href="https://www.youtube.com/watch?v=2Sze3sf9tm8" target="_blank">Ir a youtube</a> </li>
-                <li><a href="">Recetas</a>
-                    <ul>
-                        <li><a href="vegetariana.html">Comida Vegetariana</a></li>
-                        <li><a href="italiana.html">Comida Italiana</a></li>
-                        <li><a href="chilena.html">Comida Chilena</a></li>
-                        <li><a href="francesa.html">Comida Francesa</a></li>
-                        <li><a href="comPremium.html">Comida Premium</a></li>
-                    </ul>
-                </li>
-                <li><img id="logo" src="{% static 'img/logo1.png'%}" alt="ERROR"></li>
-            </ul>
-
-        </div>
-
-    </div><br>
     <div class="header">
         <h1>Premium</h1>
     </div>
@@ -69,11 +33,14 @@
             <div class="prox">
                 <h2>PROXIMAMENTE</h2>
                 <p>Escribe tus recetas aqui</p>
-                <form action="#">
-                    <button id="btnRec" type="submit" class="registerbtn">Ingresar Receta</button></form>
+                <form  method="post" action="action.cgi" enctype="multipart/form-data">
+                    <input type="file" name="nombre">
+                 </form> 
             </div>
         </div>
     </div>
+
+    
 
 
     <div class="flex-container">
@@ -223,16 +190,7 @@
 
 
 
-
-
-
-
-    <div class="row center-lg">
-        <div class="col-xs-12">
-            <footer>Una pagina de OxiCompany.</footer>
-        </div>
-    </div>
-
+    {% endblock %} 
 </body>
 
 </html>
