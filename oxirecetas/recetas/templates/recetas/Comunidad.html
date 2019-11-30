@@ -7,7 +7,21 @@
     <header>
         <h1>Comunidad</h1>
     </header>
-    <div class="row">
+
+
+               
+                       <!-- <h2>Colaboradores y Creadores</h2> 
+                       <div><img class="imgsubi" src="{%static 'img/Bastian.jpg'%}" alt="error"><br></div>
+                       <div><img class="imgsubi" src="{%static 'img/joako.jpg'%}" alt="error"><br></div>
+                       <p>Bastian Moscoso</p>
+                       <p>Joaquin Bernal</p>
+                   
+                        <h3>Recetas de la comunidad</h3>
+                        <div><img class="imgsubi" src="{%static 'img/FideosConSalsa.jpg'%}" alt="error"><br></div>
+                        <div><img class="imgsubi" src="{%static 'img/TomateRelleno.jpg'%}" alt="error"><br></div>
+                        <div><img class="imgsubi" src="{%static 'img/Asado.jpg'%}" alt="error"><br></div>-->
+                         
+                
 
             <div class="flex-container">
                     {% for post in posts %}
@@ -17,27 +31,15 @@
                         <br>
                         <div>
                             <p>{{ post.text|linebreaksbr }}</p> 
-                            <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.comments.count }}</a>
+                            <a href="{% url 'post_detail' pk=post.pk %}">Comentarios: {{ post.comments.count }}</a>
                         </div>
                     </div>
                     {% endfor %}
                 </div>
 
 
-        <div class="rightcolumn">
-            <!-- <div class="card">
-                <h2>Colaboradores y Creadores</h2>
-                <div><img class="imgsubi" src="{%static 'img/Bastian.jpg'%}" alt="error"><br></div>
-                <div><img class="imgsubi" src="{%static 'img/joako.jpg'%}" alt="error"><br></div>
-                <p>Bastian Moscoso</p>
-                <p>Joaquin Bernal</p>
-            </div> -->
-            <div class="card">
-                <h3>Recetas de la comunidad</h3>
-                <div><img class="imgsubi" src="{%static 'img/FideosConSalsa.jpg'%}" alt="error"><br></div>
-                <div><img class="imgsubi" src="{%static 'img/TomateRelleno.jpg'%}" alt="error"><br></div>
-                <div><img class="imgsubi" src="{%static 'img/Asado.jpg'%}" alt="error"><br></div>
-            </div>
+        
+           
         </div>
     </div>
 
