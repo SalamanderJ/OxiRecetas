@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from oxirecetas.recetas.quickstart.serializers import UserSerializer, GroupSerializer
+from recetas.quickstart.serializers import UserSerializer, GroupSerializer
 
 class UserViewSet(viewsets.ModelViewSet):
     """
