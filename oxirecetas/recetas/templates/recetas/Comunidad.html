@@ -17,6 +17,7 @@
                         <br>
                         <div>
                             <p>{{ post.text|linebreaksbr }}</p> 
+                            <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.comments.count }}</a>
                         </div>
                     </div>
                     {% endfor %}
@@ -36,12 +37,6 @@
                 <div><img class="imgsubi" src="{%static 'img/FideosConSalsa.jpg'%}" alt="error"><br></div>
                 <div><img class="imgsubi" src="{%static 'img/TomateRelleno.jpg'%}" alt="error"><br></div>
                 <div><img class="imgsubi" src="{%static 'img/Asado.jpg'%}" alt="error"><br></div>
-            </div>
-            <div class="card">
-                <h4>Envianos tus comentarios.Son muy importantes para nosotros.</h4>
-                <textarea rows="4" cols="50">
-        </textarea>
-                <button>Enviar</button>
             </div>
         </div>
     </div>
