@@ -4,36 +4,46 @@
 
 <body>
         {% block content %}
-    <form action="/action_page.php">
-        <div class="containerReg">
-            <h1>Registro de Usuario</h1>
-            <p>Por favor, llenar los campos para crear cuenta.</p>
-            <hr>
-
-            <label><b>Nombre</b></label>
-            <input type="text" placeholder="Ingrese su Nombre Completo" minlength="10" name="name">
-
-            <label><b>Numero</b></label>
-            <input type="text" placeholder="Ingrese su Número de Telefono" minlength="10" name="numero">
-
-            <label><b>Correo Electronico</b></label>
-            <input type="text" placeholder="Ingrese Correo Electronico" minlength="10" name="email" required>
-
-            <label><b>Contraseña</b></label>
-            <input type="password" placeholder="Ingrese Contraseña" name="psw" required>
-
-            <label><b>Confirme Contraseña</b></label>
-            <input type="password" placeholder="Confirme Contraseña" name="psw-repeat" required>
-            <hr>
-            <p>Al crear una cuenta usted acepta <a href="#">Términos y Condiciones</a>.</p>
-
-            <button type="submit" class="registerbtn">Registrar</button>
+        {% csrf_token %}
+        <div style="display: flex; justify-content: center; margin: auto; height: 300px;width: 80%;padding: 20px;">
+        <form  method="POST" action="{% url 'registrar' %}">
+                <!-- {{ form.as_p }} -->
+                 {% csrf_token %}
+                    <div class="input-container">
+                     <p>Nombre de Usuario</p>   
+                    <div id="user" class="infield">{{form.username}}</div>
+                    </div>
+        
+                   <div class="input-container"> 
+                        <p>Contraseña</p>  
+                    <div id="psw" class="infield">{{form.password1}}</div>
+                   </div>
+        
+                    <div class="input-container"> 
+                            <p>Repita Contraseña</p>
+                    <div id="psw" class="infield">{{form.password2}}</div>
+                     </div>
+  
+                
+        
+        
+                
+                <button class="btn">Registrar</button>
+                <input type="hidden" name="next" value="{{ next }}" />
+            </form>
         </div>
 
-        <div class="containerReg signin">
-            <p>¿Ya tiene una cuenta? <a id="iniciarSesion" href="#">Iniciar Sesión</a>.</p>
-        </div>
-    </form>
+    If you already have an account <a href="/login" target="blank"><strong>login</strong></a> instead.
+
+    <div class="vacio" style="height: 500px"></div>
+    
+
+              
+
+        <style>
+        input{height: 90%;} 
+        </style>
+    
     {% endblock %} 
 </body>
 
