@@ -8,35 +8,44 @@
         <h1>Comunidad</h1>
     </header>
 
+                <div class="soflexx" style="display: flex; flex-direction: row; margin: 5%; ">
+                    
+                    
+                    <div class="flex-container2">
+                        {% for post in posts %}
+                        <div>
+                            <p id="titulo-post"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></p>
+                            <p id="fecha-post"> publicado: {{ post.published_date }}</p>
+                            <br>
+                            <div>
+                                <p>{{ post.text|linebreaksbr }}</p> 
+                                <a href="{% url 'post_detail' pk=post.pk %}">Comentarios: {{ post.comments.count }}</a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    
+             
+                    <div class="flex-container2">
+                        <h3>Recetas de la comunidad</h3>
+                        <div><img class="imgsubi" src="{%static 'img/FideosConSalsa.jpg'%}" alt="error"><br></div>
+                        <div><img class="imgsubi" src="{%static 'img/TomateRelleno.jpg'%}" alt="error"><br></div>
+                        <div><img class="imgsubi" src="{%static 'img/Asado.jpg'%}" alt="error"><br></div>
+                    </div>
 
-               
-                       <!-- <h2>Colaboradores y Creadores</h2> 
+
+                    <div class="flex-container2">
+                        <h2>Colaboradores y Creadores</h2> 
                        <div><img class="imgsubi" src="{%static 'img/Bastian.jpg'%}" alt="error"><br></div>
                        <div><img class="imgsubi" src="{%static 'img/joako.jpg'%}" alt="error"><br></div>
                        <p>Bastian Moscoso</p>
                        <p>Joaquin Bernal</p>
-                   
-                        <h3>Recetas de la comunidad</h3>
-                        <div><img class="imgsubi" src="{%static 'img/FideosConSalsa.jpg'%}" alt="error"><br></div>
-                        <div><img class="imgsubi" src="{%static 'img/TomateRelleno.jpg'%}" alt="error"><br></div>
-                        <div><img class="imgsubi" src="{%static 'img/Asado.jpg'%}" alt="error"><br></div>-->
-                         
+                    </div>   
                 
 
-            <div class="flex-container">
-                    {% for post in posts %}
-                    <div>
-                        <p id="titulo-post"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></p>
-                        <p id="fecha-post"> publicado: {{ post.published_date }}</p>
-                        <br>
-                        <div>
-                            <p>{{ post.text|linebreaksbr }}</p> 
-                            <a href="{% url 'post_detail' pk=post.pk %}">Comentarios: {{ post.comments.count }}</a>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-
+               
+            </div>
 
         
            
