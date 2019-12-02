@@ -7,6 +7,7 @@ from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 
+
 # Create your views here.
 def index(request):
     return render(request, 'recetas/index.html', {})
@@ -86,6 +87,9 @@ def registrar(request):
                 login(request, user)
                 return redirect('/')
     return render(request, "recetas/registrar.html", {'form': form})
+
+def Login(request):
+    return render(request, 'recetas/Login.html', {}) 
 
 def vegetariana(request):
     return render(request, 'recetas/vegetariana.html', {}) 

@@ -1,6 +1,7 @@
 from django.conf.urls import url
 from django.urls import path
 from . import views
+from django.contrib.auth import views as views_auth
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -13,11 +14,14 @@ urlpatterns = [
     path('post/<pk>/remove/', views.post_remove, name='post_remove'),
     path('post/<int:pk>/comment/', views.add_comment_to_post, name='add_comment_to_post'),
     path('registrar.html', views.registrar, name='registrar'),
+    path('Login/', views_auth.LoginView.as_view(template_name='recetas/Login.html'), name='Login'),
+    path('Logout/', views_auth.LogoutView.as_view(next_page='index'), name='Logout'),
     path('vegetariana.html', views.vegetariana, name='vegetariana'),
     path('italiana.html', views.italiana, name='italiana'),
     path('chilena.html', views.chilena, name='chilena'),
     path('francesa.html', views.francesa, name='francesa'),
     path('comPremium.html', views.comPremium, name='comPremium'),
+    
 ]
 
 
