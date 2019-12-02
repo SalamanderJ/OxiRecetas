@@ -783,19 +783,5 @@ width: 50%;
   line-height: 75px;
   font-size: 30px;
 }
-.flex-container2 {
-  display: flex;
-	flex-direction: column;
-}
 
-.flex-container2 > div {
-  background-color: #4CBAC3;
-  width: 400px;
-  height: 300px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-  margin: 30%;
-}
 
