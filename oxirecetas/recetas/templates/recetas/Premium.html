@@ -1,0 +1,196 @@
+{% extends 'recetas/base.html' %}
+{% load staticfiles %}
+
+
+<body>
+        {% block content %}
+
+
+    <div class="header">
+        <h1>Premium</h1>
+    </div>
+
+    <div class="social">
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/watch?v=iM_KMYulI_s" target="_blank" class="fas fa-hamburger"></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=Cyskqnp1j64" target="_blank" class="fas fa-cannabis"></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=JWdTvyy6-mU" target="_blank" class="fas fa-drumstick-bite"></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=Yw-FSUEc8Pc" target="_blank" class="fas fa-cookie"></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="prox">
+                <h2>PROXIMAMENTE</h2>
+                <p>Escribe tus recetas aqui</p>
+                <form  method="post" action="action.cgi" enctype="multipart/form-data">
+                    <input type="file" name="nombre">
+                 </form> 
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div class="flex-container">
+        <div class="container">
+            <h1>handroll</h1>
+            <img src="{%static 'img/handroll.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id06').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id06" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>handroll</h1>
+                            </header>
+                            <Section>
+                                <video id="video" width="400" controls>
+                    <source src="{%static 'videos/handroll.mp4'%}" type="video/mp4">
+                    Tu navegador no es compatible con el video.
+                    </video>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h1>Lomo a lo pobre</h1>
+            <img src="{%static 'img/lomo.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id07').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id07" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Lomo a lo pobre</h1>
+                            </header>
+                            <Section>
+                                <video id="video" width="400" controls>
+                    <source src="{%static 'videos/Lomo.mp4'%}" type="video/mp4">
+                    Tu navegador no es compatible con el video.
+                    </video>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h1>Completo Italiano</h1>
+            <img src="{%static 'img/completo.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id08').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id08" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Completo</h1>
+                            </header>
+                            <Section>
+                                <video id="video" width="400" controls>
+                    <source src="{%static 'videos/completo.mp4'%}" type="video/mp4">
+                    Tu navegador no es compatible con el video.
+                    </video>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex-container">
+        <div class="container">
+            <h1>Proximamente</h1>
+            <img src="{%static 'img/Bastian.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id05" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Fuera aqui no hay nada UWU</h1>
+                            </header>
+                            <Section>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Proximamente</h1>
+            <img src="{%static 'img/Bastian.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id05" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Fuera aqui no hay nada UWU</h1>
+                            </header>
+                            <Section>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Proximamente</h1>
+            <img src="{%static 'img/Bastian.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id05" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Fuera aqui no hay nada UWU</h1>
+                            </header>
+                            <Section>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    {% endblock %} 
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+{% extends 'recetas/base.html' %}
+{% load staticfiles %}
+
+
+<body>
+        {% block content %}
+    <header>
+        <h1>Comunidad</h1>
+    </header>
+
+                <div class="soflexx" style="display: flex; flex-direction:row; ">
+                    
+                    
+                    <div class="flex-container-pl">
+                        <div style="height: 90px;"></div>
+                        {% for post in posts %}
+                        <div>
+                            <p id="titulo-post"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></p>
+                            <p id="fecha-post"> publicado: {{ post.published_date }}</p>
+                            <br>
+                            <div>
+                                <p>{{ post.text|linebreaksbr }}</p> 
+                                <a href="{% url 'post_detail' pk=post.pk %}">Comentarios: {{ post.comments.count }}</a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    
+             
+                    <div class="flex-container-pl">
+                        <h2>Recetas de la comunidad</h2>
+                         <div><img class="imgsubi" src="{%static 'img/FideosConSalsa.jpg'%}" alt="error"></div> 
+                        <div><img class="imgsubi" src="{%static 'img/TomateRelleno.jpg'%}" alt="error"></div>
+                        <div><img class="imgsubi" src="{%static 'img/Asado.jpg'%}" alt="error"></div>
+                    </div>
+
+
+                    <div
+                     class="flex-container-pl">
+                        <h3 style="top: 0;">Colaboradores y Creadores</h3> 
+                       <div><img class="imgsubi" src="{%static 'img/Bastian.jpg'%}" alt="error"><br></div>
+                       <p>Bastian Moscoso</p>
+                       <div><img class="imgsubi" src="{%static 'img/joako.jpg'%}" alt="error"><br></div>
+                       <p>Joaquin Bernal</p>
+                       <div style="height: 250px;"></div>
+                       
+                    </div>   
+                
+
+               
+            </div>
+
+            <style>
+
+                    .flex-container-pl {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+                
+                    .flex-container-pl > div {
+                        padding: 10px;
+                        width: 100%;
+                        height: 300px;
+                        margin: 10px;
+                        text-align: center;
+                        line-height: 20px;
+                    }
+                
+                    .flex-container-pl > div:hover {
+                        color: rgb(22, 22, 22);
+                    }
+                </style>
+           
+        </div>
+    </div>
+
+    
+
+  
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+
+    <h2>Tabla del soporte</h2>
+    <p>Estamos apenas comenzando nuestra trayectoria como host de esta pagina web asi que de ver cualquier error en la pagina por favor contactar con algunos de los correos de abajo.</p>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            <tr>
+                <td>Bastian</td>
+                <td>Moscoso</td>
+                <td>Bas.Moscoso@alumnos.duoc.cl</td>
+            </tr>
+            <tr>
+                <td>Joaquin</td>
+                <td>Bernal</td>
+                <td>Joa.bernal@alumnos.duoc.cl</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@alumnos.duoc.cl</td>
+            </tr>
+            <tr>
+                <td>Anja</td>
+                <td>Ravendale</td>
+                <td>anja@alumnos.duoc.cl</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+    
+
+    
+    
+   
+    
+
+    {% endblock %} 
+</body>
+
+</html>

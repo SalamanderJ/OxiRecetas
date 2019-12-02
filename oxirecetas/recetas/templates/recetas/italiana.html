@@ -1,0 +1,256 @@
+{% extends 'recetas/base.html' %}
+{% load staticfiles %}
+
+
+<body>
+        {% block content %}
+
+    <h2>Comida Italiana</h2>
+
+
+    <div class="flex-container">
+        <div class="container">
+            <h1>Canestrelli</h1>
+            <img src="{%static 'img/cane.jpg'%}" alt="Avatar" class="image">
+
+            <div class="w3-container">
+                <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Canestrelli</h1>
+                            </header>
+                            <Section>
+                                <h3>Ingredientes</h3><br>
+                                <p class="texto">-200 gramos de mantequilla.</p>
+                                <p class="texto">-200 gramos de harina de trigo</p>
+                                <p class="texto">-150 gramos de azúcar flor</p>
+                                <p class="texto">-100 gramos de maicena</p>
+                                <p class="texto">-8 huevos</p>
+                                <p class="texto">-1 limón</p>
+                                <p class="texto">-Sal</p><br>
+                                <h3>Instrucciones</h3>
+                                <p class="texto">-Cuece los 8 huevos. Llena una olla con agua y ponla a calentar a fuego lento hasta que empiece a hervir, momento en el que debes meter los huevos y cocerlos durante 8 minutos. Luego pásalos por agua fría para cortar la
+                                    cocción.
+                                </p>
+                                <div class="flex-images">
+                                    <div><img src="{%static 'img/Canestre1.jpeg'%}" width="120px" height="120px" alt="Avatar"></div>
+                                    <div><img src="{%static 'img/canestre2.jpeg'%}" width="120px" height="120px" alt="Avatar"></div>
+                                </div>
+                                <p class="texto">-Deja que los huevos se enfríen y luego pélalos. Separa las claras de las yemas, siendo estas últimas las que vas a utilizar.</p>
+                                <p class="texto">-Pon las claras cocidas en un colador de malla y, con un bol debajo, comienza a aplastarlas con una cuchara para rallarlas.</p>
+                                <div class="flex-images">
+                                    <div><img src="{%static 'img/canestre3.jpeg'%}" width="120px" height="120px" alt="Avatar"></div>
+                                    <div><img src="{%static 'img/canestre4.jpeg'%}" width="120px" height="120px" alt="Avatar"></div>
+                                </div>
+                                <p class="texto">-Corta los 200 gramos de mantequilla fría en pequeños cubos e incorpórala a las yemas, agregando también 120 gramos de azúcar flor y un poco de sal. Luego mezcla todo con las manos.</p>
+                                <p class="texto">-A continuación, agrega la cascara del limón rallada, los 200 gramos de harina de trigo y los 100 gramos de maicena. Vuelve a trabajar la masa hasta que adquiera un aspecto homogéneo.</p>
+                                <p class="texto">-Divide la masa en 2, envuélvelas con un poco de papel film y déjalas reposar en el congelador durante 1 hora.</p>
+                                <div class="flex-images">
+                                    <div><img src="{%static 'img/canestre5.jpeg'%}" width="120px" height="120px" alt="Avatar"></div>
+                                    <div><img src="{%static 'img/canestre6.jpeg'%}" width="120px" height="120px" alt="Avatar"></div>
+                                </div>
+                                <p class="texto">-Espolvorea un poco de harina en una encimera y saca una de las mitades. Extiéndela con un rodillo de cocina y luego comienza a darle forma de margarita con un molde o cortapastas.</p>
+                                <p class="texto">-Ve colocando las galletas ya listas en una bandeja de horno cubierta con un poco de papel vegetal.</p>
+                                <p class="texto">-Calienta el horno a 170ºC con calor por arriba y por abajo y, cuando alcance la temperatura, mete las pastas durante 12 o 15 minutos.</p>
+                                <p class="texto">-En el momento en el que empiecen a adquirir un ligero tono tostado, saca los canestrelli del horno y deja que se enfríen durante unos minutos. Luego espolvorea por encima con 30 gramos de azúcar flor y sirve.</p>
+                                <div class="flex-images">
+                                    <div><img src="{%static 'img/canestre7.jpeg'%}" width="120px" height="120px" alt="Avatar"></div>
+                                    <div><img src="{%static 'img/canestre8.jpeg'%}" width="120px" height="120px" alt="Avatar"></div>
+                                </div>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Pappardelle con salsa de champiñones</h1>
+            <img src="{%static 'img/pappar.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id02" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Pappardelle con salsa de champiñones</h1>
+                            </header>
+                            <Section>
+                                <p class="texto">Ingredientes</p><br>
+                                <p class="texto">350 gramos de harina</p>
+                                <p class="texto">2 huevos</p>
+                                <p class="texto">100 gramos de champiñones</p>
+                                <p class="texto">100 gramos de crema de leche</p>
+                                <p class="texto">1 cebolla</p>
+                                <p class="texto">1 zanahoria</p>
+                                <p class="texto">1 calabací­n</p>
+                                <p class="texto">Vino blanco</p>
+                                <p class="texto">Aceite de oliva virgen extra</p>
+                                <p class="texto">Perejil fresco</p>
+                                <p class="texto">Sal</p>
+                                <p class="texto">Pimienta negra molida</p>
+                                <p class="texto">Queso rallado</p>
+                                <p>Instrucciones</p><br>
+                                <p class="texto">-Mezcla en un bol grande la harina, los huevos, el aceite de oliva y la sal y amasa con las manos.</p>
+                                <p class="texto">-Cuando hayas conseguido una masa homogénea, haz una bola con ella y déjala reposar en el recipiente cubierto por un paño durante 30 minutos.</p>
+                                <p class="texto">-Cuando haya pasado el tiempo, estírala y dale forma rectangular con un rodillo de cocina.</p>
+                                <p class="texto">-Cuando esté estirada, espolvorea un poco de harina por encima y corta tiras de 3 centímetros de ancho con un cuchillo. Deja reposar la pasta.</p>
+                                <p class="texto">-Pela y pica la cebolla, el calabacín y la zanahoria.</p>
+                                <p class="texto">-Lava los champiñones y lamínalos. Reserva algunos trozos para el emplatado.</p>
+                                <p class="texto">-Pon una sartén al fuego con un chorrito de aceite de oliva y, cuando éste esté caliente, pocha la cebolla durante 10 minutos.</p>
+                                <p class="texto">-A continuación incorpora el calabacín, la zanahoria y los champiñones troceados a la sartén y rehógalos antes de agregar el vino blanco, cuyo alcohol se evaporará en un par de minutos.</p>
+                                <p class="texto">-Pon a hervir la pasta en abundante agua con sal. Te recomendamos que la dejes al dente para que luego no se pase de cocción al emplatarla con la salsa.</p>
+                                <p class="texto">-Agrega la crema a la sartén y echa sal y pimienta al gusto.</p>
+                                <p class="texto">-Cuando la pasta ya esté lista y escurrida, rehógala en una sartén con aceite de oliva e incorpora los champiñones laminados reservados al principio.</p>
+                                <p class="texto">-A la hora de servir la pasta hazlo con la salsa de champiñones por encima y aderezada con un poco de queso rallado y perejil fresco picado</p>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h1>Focaccia de aceitunas</h1>
+            <img src="{%static 'img/foca.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id03" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Pappardelle con salsa de champiñones</h1>
+                            </header>
+                            <Section>
+                                <p class="texto">350 gramos de harina de fuerza</p>
+                                <p class="texto">200 mililitros de agua tibia</p>
+                                <p class="texto">20 gramos de levadura fresca</p>
+                                <p class="texto">1 cucharadita de azúcar</p>
+                                <p class="texto">1 cucharadita de sal</p>
+                                <p class="texto">15 gramos de aceite de oliva</p>
+                                <p class="texto">50 gramos de aceitunas verdes</p>
+                                <p class="texto">1 ramita de romero</p>
+                                <p class="texto">Sal gruesa</p>
+                                <p>Instrucciones</p><br>
+                                <p class="texto">Calentar agua y echar en ella la levadura.</p>
+                                <p class="texto">Añade la harina, la sal y el azúcar a la mezcla de la levadura y mézclalo.</p>
+                                <p class="texto">Echa el aceite de oliva y amásalo hasta que quede liso y compacto.</p>
+                                <p class="texto">Deja la masa en un bol reposar durante 1 hora.</p>
+                                <p class="texto">Estira la masa con un rodillo y dale forma circular.</p>
+                                <p class="texto">Colócala en una bandeja de horno y píntala con aceite de oliva.</p>
+                                <p class="texto">Haz agujeros y mete las aceitunas junto al romero en ellos. Después añade la sal gruesa.</p>
+                                <p class="texto">Calienta el horno a 340º y mete la focaccia durante 10-15 minutos.</p>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="flex-container">
+        <div class="container">
+            <h1>Canelones de ricota y espinaca</h1>
+            <img src="{%static 'img/rollos.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id04" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Canenoles de ricota y espinaca</h1>
+                            </header>
+                            <Section>
+                                <p class="texto">250 gr de canelones</p>
+                                <p class="texto">½ taza de queso parmesano para espolvorear</p>
+                                <p class="texto">1 kilo de espinacas</p>
+                                <p class="texto">½ cebolla, picada en cubos pequeños</p>
+                                <p class="texto">1 cucharada de aceite de oliva</p>
+                                <p class="texto">500 gr de ricota</p>
+                                <p class="texto">1 huevo</p>
+                                <p class="texto">2/3 taza de queso parmesano rallado</p>
+                                <p class="texto">1 cucharadita de Sal de Mar</p>
+                                <p class="texto">½ cucharadita de Pimienta Blanca Molida </p>
+                                <p class="texto">1 sobre de Sofrito en Trozos </p>
+                                <p class="texto">800 gr de tomates en tarro, en cubos</p>
+                                <p class="texto">½ taza de vino blanco</p>
+                                <p class="texto">1 cucharada de Orégano entero</p>
+                                <p class="texto">1 cucharadita de Ají de Color </p>
+                                <p class="texto">1 hoja de Laurel </p>
+                                <p class="texto">1 cucharada de azúcar</p>
+                                <p>Instrucciones</p><br>
+                                <p class="texto">Preparar la salsa de tomates primero. Poner el Sofrito Gourmet en una olla mediana y revolver hasta calentar. </p>
+                                <p class="texto">Agregar el resto de los ingredientes y cocinar semi tapado por 40 minutos, revolviendo ocasionalmente, hasta que la salsa haya espesado.</p>
+                                <p class="texto">Calentar el horno a 180°C.</p>
+                                <p class="texto">Mientras tanto preparar el relleno. Sacar las hojas de espinacas y lavarlas muy bien.</p>
+                                <p class="texto">Poner las hojas sobre un colador y vaciar agua hirviendo (1,5 litro aprox.), luego pasar por agua muy helada.</p>
+                                <p class="texto">Cocinar la cebolla en el aceite hasta que esté blanda y dorada, reservar.</p>
+                                <p class="texto">Estrujar muy bien la espinaca y picar bien pequeña (pueden usar la procesadora o minipimer). </p>
+                                <p class="texto">Mezclar la espinaca, con la cebolla salteada, ricota, huevo, queso parmesano, Sal de Mar y pimienta blanca molida; mezclar hasta integrar.</p>
+                                <p class="texto">Poner una capa de salsa de tomates en el fondo de una fuente de horno. </p>
+                                <p class="texto">Pasar por agua caliente la masa de canelones (por un par de minutos) si es que éstos no necesitan cocción; de otro modo, cocinar en agua hirviendo según las instrucciones del paquete.</p>
+                                <p class="texto">Rellenar los canelones con la mezcla de ricota y espinacas. Ponerlos sobre la fuente y tapar con el resto de la salsa. </p>
+                                <p class="texto">Espolvorear con queso parmesano y hornear por 20 minutos tapada con papel aluminio (alusafoil). </p>
+                                <p class="texto">Sacar el aluminio y hornear por 15 minutos adicionales o hasta que la masa de los canelones esté blanda.</p>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Proximamente</h1>
+            <img src="{%static 'img/prox.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id05" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Fuera aqui no hay nada UWU</h1>
+                            </header>
+                            <Section>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Proximamente</h1>
+            <img src="{%static 'img/prox.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id05" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Fuera aqui no hay nada UWU</h1>
+                            </header>
+                            <Section>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    {% endblock %} 
+</body>

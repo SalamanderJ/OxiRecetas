@@ -1,0 +1,213 @@
+{% extends 'recetas/base.html' %}
+{% load staticfiles %}
+
+
+<body>
+        {% block content %}
+
+    <h2>Comida Chilena</h2>
+
+
+    <div class="flex-container">
+        <div class="container">
+            <h1>Anticuchos</h1>
+            <img src="{%static 'img/anti.jpg'%}" alt="Avatar" class="image">
+
+            <div class="w3-container">
+                <button onclick="document.getElementById('id13').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id13" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id13').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Anticuchos</h1>
+                            </header>
+                            <Section>
+                                <h3>Ingredientes</h3><br>
+                                <p class="texto">200 gramos de mantequilla</p>
+                                <p class="texto">2 kilos de carne de cerdo pulpa o costilla deshuesada</p>
+                                <p class="texto">jugo de 2 limones, sal pimienta, miel, finas hierbas provenzales</p>
+                                <p class="texto">2 kilos de carne de vacuno lomo, asiento o posta</p>
+                                <p class="texto">Ají, sal, pimienta, vinagre de vino rojo, orégano</p>
+                                <p class="texto">2 cebollas</p>
+                                <p class="texto">3 pimentones</p>
+                                <p class="texto">6 longanizas</p>
+                                <p class="texto">Pan para servir</p>
+                                <p class="texto">Palitos de bambú remojados o fierritos de anticuchos</p>
+                                <h3>Instrucciones</h3>
+                                <p class="texto">Unas 3 horas antes de hacer los anticuchos. Limpiar la carne, cortar y botar los nervios y fascias. Cortar en trozos de 3-5 cm por lado aproximadamente.</p>
+                                <p class="texto">Colocar el vacuno en un bol y rociar con vinagre de vino, solo lo suficiente para mojar los trozos, sazonar con sal, pimienta, orégano y ají en polvo o merkén.</p>
+                                <p class="texto">Colocar el cerdo en un bol y agregar el jugo de limón para mojar la carne y sazonar con sal, pimienta, miel y hierbas provenzales. Usen más sal de la que creen necesaria.</p>
+                                <p class="texto">Tapar la carne y refrigerarla por 2 horas.</p>
+                                <p class="texto">Cuando los vayan a armar. Si usan palitos de bambú deben remojarlos 15 minutos en agua antes de usar, para que no se incendien.</p>
+                                <p class="texto">Cortar la cebolla y los pimentones en trozos grandes.</p>
+                                <p class="texto">Cortar la longaniza en trozos.</p>
+                                <p class="texto">Armar los anticuchos en el orden que deseen.</p>
+                                <p class="texto">Precalentar la parrilla a fuego fuerte.</p>
+                                <p class="texto">Cocinar los anticuchos unos 5 minutos por lado. También calentar el pan en la parrilla y enterrarlo en la punta del anticucho al momento de servir. Rociar con cerveza usando un atado de cilantro si desean.</p>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Charquicán</h1>
+            <img src="{%static 'img/char.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id14').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id14" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id14').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Charquicán</h1>
+                            </header>
+                            <Section>
+                                <h3>Ingredientes</h3><br>
+                                <p class="texto">500 gramos de carne picada o molida salteada</p>
+                                <p class="texto">2 tazas de trozos de zapallo</p>
+                                <p class="texto">3 papas picadas</p>
+                                <p class="texto">1 cebolla pequeña picada fina</p>
+                                <p class="texto">1/2 taza de choclo, arvejitas o porotos verdes (pueden ser congelados)</p>
+                                <p class="texto">1/2 cucharadita de paprika o ají de color</p>
+                                <p class="texto">sal, pimienta, aceite de oliva</p>
+                                <h3>Instrucciones</h3><br>
+                                <p class="texto">En una sartén mediana a fuego medio poner 1 cucharada de aceite de oliva calentar, agregar la cebolla y cocinar hasta dorar, 6-8 minutos.</p>
+                                <p class="texto">Agregar la carne y dorar 3 minutos por lado</p>
+                                <p class="texto">Agregar el zapallo, papa, sal, pimienta y paprika, revolver bien, agregar 1 taza de caldo de verdura o agua. Tapar y cocinar por 15 minutos a fuego medio, debe hervirsuavemente. Moler con un pisa papas.</p>
+                                <p class="texto">Si se tiene a mano, agregar choclo, arvejitas, porotos verdes picados. Cocinar por 3-4 minutos.</p>
+                                <p class="texto">Probar y ajustar la sazón.</p>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h1>Humitas</h1>
+            <img src="{%static 'img/hum.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id15').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id15" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id15').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Humitas</h1>
+                            </header>
+                            <Section>
+                                <h3>Ingredientes</h3><br>
+                                <p class="texto">12 choclos grandes humeros</p>
+                                <p class="texto">2 cebollas grandes, picadas en cubos pequeños</p>
+                                <p class="texto">2 cucharadas de manteca de cerdo o mantequilla</p>
+                                <p class="texto">1/2 taza de leche</p>
+                                <p class="texto">1 cucharada de ají de color </p>
+                                <p class="texto">1/4 cucharadita de pimienta</p>
+                                <p class="texto">2 cucharaditas de sal</p>
+                                <p class="texto">Albahaca, un manojo de hojas picadas finas</p>
+                                <p class="texto">Ajíes verdes, sin pepas y picados finos (opcional)</p>
+                                <p class="texto">Chicharrones (opcional)</p>
+                                <p class="texto">pita o cordel de cocina</p>
+                                <h3>Instrucciones</h3><br>
+                                <p class="texto">Cortar la base de los choclos, separar las hojas y reservar las hojas grandes y ordenarlas en 16 parejas de similar tamaño.</p>
+                                <p class="texto">Terminar de pelar los choclos y sacar todos los hilos. Usando un cuchillo grande, desgranar el choclo, lo pueden hacer en una pasada y luego pasar los granos por la moledora o procesadora de alimentos. O en varias pasadas
+                                    (2-3) para que el grano quede finamente picado.</p>
+                                <p class="texto">En una olla grande, ojalá de fondo grueso, calentar la manteca y agregar la cebolla, dorar por 8-10 minutos revolviendo ocasionalmente. Agregar el ají de color, sal, pimienta y ajíes. Revolver. Agregar el choclo picado
+                                    y la leche, revolver bien y dejar que hierva, y espese, agregar la albahaca y los chicharrones si se desea. Agregar la chuchoca si es necesario espesar más. La mezcla debe quedar firme.</p>
+                                <p class="texto">Colocar tres o cuatro cucharadas grandes de mezcla sobre las hojas abiertas. Doblar primero en los lados y luego las puntas hacia adentro. Amarre con pita y dele forma de humita.</p>
+                                <p class="texto">Hierva abundante agua con sal en una olla grande. Cocine las humitas sumergidas por 30-40 minutos.</p>
+                                <p>Servir caliente, cortar la pita en la mesa. Acompañar con ensalada chilena.</p>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="flex-container">
+        <div class="container">
+            <h1>Pescado Frito</h1>
+            <img src="{%static 'img/pescado.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id16').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id16" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id16').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Pescado Frito</h1>
+                            </header>
+                            <Section>
+                                <h3>Ingredientes</h3><br>
+                                <p class="texto">1 kilo de filetes de pescado grande limpio sin huesos ni piel (merluza, congrio, róbalo)</p>
+                                <p class="texto">1 taza de harina</p>
+                                <p class="texto">3/4 taza de cerveza o vino blanco</p>
+                                <p class="texto">Sal, pimienta, limón, aliño completo</p>
+                                <p class="texto">Aceite para freír</p>
+                                <h3>Instrucciones</h3><br>
+                                <p class="texto">Cortar el pescado en 6 porciones, asegurarse de que no tenga espinas.</p>
+                                <p class="texto">Aliñar con jugo de limón, sal y pimienta por ambos lados y dejar reposar por 5 minutos</p>
+                                <p class="texto">Calentar aceite vegetal en una sartén de paredes altas. Por lo menos unos 5 cm de profundidad de aceite.</p>
+                                <p class="texto">Preparar el batido, en un bol colocar el harina y mientras baten con un tenedor agregar la cerveza, agregar sal, pimienta, y una pizca de aliño completo. Quieren un batido espeso como cola fría.</p>
+                                <p class="texto">Para probar el aceite dejen caer un poco del batido, debe flotar y empezar a dorarse de inmediato. Probar, así ven si la sazón del batido está del gusto de ustedes.</p>
+                                <p class="texto">Bañar el pescado en el batido por ambos lados y freír unos 3 minutos por lado hasta que esté dorado y crujiente.</p>
+                                <p class="texto">Sacar a un plato con toalla de papel, dejar estilar un poco y servir de inmediato con puré, ensalada de papas y ensalada chilena.</p>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Proximamente</h1>
+            <img src="{%static 'img/prox.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id05" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Fuera aqui no hay nada UWU</h1>
+                            </header>
+                            <Section>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Proximamente</h1>
+            <img src="{%static 'img/prox.jpg'%}" alt="Avatar" class="image">
+            <div class="w3-container">
+                <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-black">Ver más</button>
+                <div id="id05" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <header>
+                                <h1>Fuera aqui no hay nada UWU</h1>
+                            </header>
+                            <Section>
+                            </Section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    {% endblock %} 
+</body>
