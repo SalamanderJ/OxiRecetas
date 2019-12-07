@@ -7,6 +7,7 @@ from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 
+IMAGE_FILE_TYPES = ['png', 'jpg', 'jpeg']
 
 # Create your views here.
 def index(request):
@@ -23,17 +24,15 @@ def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'recetas/post_detail.html', {'post': post}) 
 
-def post_new(request):
-    form = PostForm()
-    return render(request, 'recetas/post_edit.html', {'form': form})
 
 def post_new(request):
     if request.method == "POST":
-        form = PostForm(request.POST)
+        form = PostForm(request.POST , request.FILES) 
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
             post.published_date = timezone.now()
+            post.cover = request.FILES['cover']
             post.save()
             return redirect('post_detail', pk=post.pk)
     else:
